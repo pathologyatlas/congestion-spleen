@@ -1,8 +1,8 @@
-# template
+# congestion-spleen
 
 
 
-**template for pathology atlas repositories**
+**congestion-spleen for pathology atlas repositories**
 
 
 ```
@@ -12,11 +12,11 @@ see [make-html-WSI](https://github.com/pathologyatlas/make-html-WSI) for more in
 ```
 update html file heading:
 
-<title>TemplateEN templateTR</title>
+<title>congestion in spleen dalak konjesyon</title>
 
-<meta name="keywords" content="TemplateEN, templateTR, patoloji, atlas, pathology, whole slide image">
+<meta name="keywords" content="congestion in spleen, dalak konjesyon, patoloji, atlas, pathology, whole slide image">
 
-<meta name="description" content="TemplateEN templateTR">
+<meta name="description" content="congestion in spleen dalak konjesyon">
 
 ```
 
@@ -41,10 +41,10 @@ add to begining of qmd page
 
 ---
 description: |
-    TemplateEN
-    TemplateTR
+    congestion in spleen
+    dalak konjesyon
 date: last-modified
-categories: [template]
+categories: [congestion-spleen]
 page-layout: full
 bibliography: references.bib
 ---
@@ -59,7 +59,7 @@ bibliography: references.bib
 
 
 
-```{r language template, echo=FALSE, include=TRUE}
+```{r language congestion-spleen, echo=FALSE, include=TRUE}
 source("./R/language.R")
 output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 ```
@@ -68,59 +68,59 @@ output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 
 
 ```{asis, echo = (language == "TR")}
-## TemplateTR {#sec-template}
+## dalak konjesyon {#sec-congestion-spleen}
 ```
 
 
 ```{asis, echo = (language == "EN")}
-## TemplateEN {#sec-template}
+## congestion in spleen {#sec-congestion-spleen}
 ```
 
 
-```{r template screenshot, eval=TRUE, include=FALSE}
-if (!file.exists("./screenshots/template_screenshot.png")) {
+```{r congestion-spleen screenshot, eval=TRUE, include=FALSE}
+if (!file.exists("./screenshots/congestion-spleen_screenshot.png")) {
 webshot2::webshot(
-  url = "https://images.patolojiatlasi.com/template/HE.html",
-  file = "./screenshots/template_screenshot.png"
+  url = "https://images.patolojiatlasi.com/congestion-spleen/HE.html",
+  file = "./screenshots/congestion-spleen_screenshot.png"
 )
 }
 ```
 
 ```{r, echo=FALSE, include=TRUE, eval=TRUE}
-knitr::include_url(url = "https://images.patolojiatlasi.com/template/HE.html")
+knitr::include_url(url = "https://images.patolojiatlasi.com/congestion-spleen/HE.html")
 ```
 
 ```{r, echo=FALSE, include=TRUE, eval=TRUE}
-#| label: template_screenshot
-#| fig-cap: "TemplateTR"
-knitr::include_graphics("./screenshots/template_screenshot.png")
+#| label: congestion-spleen_screenshot
+#| fig-cap: "dalak konjesyon"
+knitr::include_graphics("./screenshots/congestion-spleen_screenshot.png")
 ```
 
-See @template_screenshot for TemplateTR.
+See @congestion-spleen_screenshot for dalak konjesyon.
 
 ::: {.content-hidden when-format="pdf"}
-TemplateTR
+dalak konjesyon
 :::
 
 ::: {.content-visible when-format="pdf"}
-TemplateTR
+dalak konjesyon
 :::
 
 
 
 ```{asis, echo = (language == "TR")}
 
-**templateTR**
+**dalak konjesyon**
 
 
-[![Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE.html) [Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/template/HE.html)
+[![Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/congestion-spleen_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/congestion-spleen/HE.html) [Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/congestion-spleen/HE.html)
 ```
 
 
 ```{asis, echo = ((language=="TR") & (output_type=="html"))}
 Mikroskopik görüntüleri inceleyin:
 
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/congestion-spleen/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 ```
 
@@ -129,14 +129,14 @@ Mikroskopik görüntüleri inceleyin:
 ```{comment} 
 asis, echo = (language == "TR")
 
-**templateTR**
+**dalak konjesyon**
 
 
-[![İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE_annotated.html) [İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/template/HE_annotated.html)
+[![İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/congestion-spleen_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/congestion-spleen/HE_annotated.html) [İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/congestion-spleen/HE_annotated.html)
 
 İşaretlenmiş mikroskopik görüntüleri inceleyin:
 
-<iframe src="https://images.patolojiatlasi.com/template/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/congestion-spleen/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 ```
 
@@ -147,20 +147,20 @@ asis, echo = (language == "TR")
 
 
 
-<button id="tani-case-template-btn">Tanıyı Göster</button>
-<div id="answer-template" style="display: none;">templateTR</div>
+<button id="tani-case-congestion-spleen-btn">Tanıyı Göster</button>
+<div id="answer-congestion-spleen" style="display: none;">dalak konjesyon</div>
 
 <script>
-  const showAnswer-templateBtn = document.getElementById('tani-case-template-btn');
-  const answer-template = document.getElementById('answer-template');
+  const showAnswer-congestion-spleenBtn = document.getElementById('tani-case-congestion-spleen-btn');
+  const answer-congestion-spleen = document.getElementById('answer-congestion-spleen');
 
-  showAnswer-templateBtn.addEventListener('click', () => {
-    if (answer-template.style.display === 'none') {
-      answer-template.style.display = 'block';
-      showAnswer-templateBtn.textContent = 'Tanıyı Gizle';
+  showAnswer-congestion-spleenBtn.addEventListener('click', () => {
+    if (answer-congestion-spleen.style.display === 'none') {
+      answer-congestion-spleen.style.display = 'block';
+      showAnswer-congestion-spleenBtn.textContent = 'Tanıyı Gizle';
     } else {
-      answer-template.style.display = 'none';
-      showAnswer-templateBtn.textContent = 'Tanıyı Göster';
+      answer-congestion-spleen.style.display = 'none';
+      showAnswer-congestion-spleenBtn.textContent = 'Tanıyı Göster';
     }
   });
 </script>
@@ -187,9 +187,9 @@ asis, echo = ((language=="TR") & (output_type!="html"))
 
 ```{asis, echo = (language == "EN")}
 
-**templateEN**
+**congestion in spleen**
 
-[![Click for Full Screen WSI](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE.html) [Click for Full Screen WSI](https://images.patolojiatlasi.com/template/HE.html)
+[![Click for Full Screen WSI](./screenshots/congestion-spleen_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/congestion-spleen/HE.html) [Click for Full Screen WSI](https://images.patolojiatlasi.com/congestion-spleen/HE.html)
 
 
 ```
@@ -200,7 +200,7 @@ asis, echo = ((language=="TR") & (output_type!="html"))
 
 See Microscopy with viewer: 
 
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/congestion-spleen/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 ```
 
@@ -208,14 +208,14 @@ See Microscopy with viewer:
 ```{comment}
 asis, echo = (language == "EN")
 
-**templateEN**
+**congestion in spleen**
 
-[![Click for Full Screen Annotated WSI](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE_annotated.html) [Click for Full Screen Annotated WSI](https://images.patolojiatlasi.com/template/HE_annotated.html)
+[![Click for Full Screen Annotated WSI](./screenshots/congestion-spleen_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/congestion-spleen/HE_annotated.html) [Click for Full Screen Annotated WSI](https://images.patolojiatlasi.com/congestion-spleen/HE_annotated.html)
 
 
 See Annotated Microscopy with viewer: 
 
-<iframe src="https://images.patolojiatlasi.com/template/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/congestion-spleen/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 
 
@@ -224,20 +224,20 @@ See Annotated Microscopy with viewer:
 ```{comment}
 asis, echo = (language == "EN")
 
-<button id="dx-case-template-btn">Show the Diagnosis</button>
-<div id="answer-template" style="display: none;">templateEN</div>
+<button id="dx-case-congestion-spleen-btn">Show the Diagnosis</button>
+<div id="answer-congestion-spleen" style="display: none;">congestion in spleen</div>
 
 <script>
-  const showAnswer-templateBtn = document.getElementById('dx-case-template-btn');
-  const answer-template = document.getElementById('answer-template');
+  const showAnswer-congestion-spleenBtn = document.getElementById('dx-case-congestion-spleen-btn');
+  const answer-congestion-spleen = document.getElementById('answer-congestion-spleen');
 
-  showAnswer-templateBtn.addEventListener('click', () => {
-    if (answer-template.style.display === 'none') {
-      answer-template.style.display = 'block';
-      showAnswer-templateBtn.textContent = 'Hide the Diagnosis';
+  showAnswer-congestion-spleenBtn.addEventListener('click', () => {
+    if (answer-congestion-spleen.style.display === 'none') {
+      answer-congestion-spleen.style.display = 'block';
+      showAnswer-congestion-spleenBtn.textContent = 'Hide the Diagnosis';
     } else {
-      answer-template.style.display = 'none';
-      showAnswer-templateBtn.textContent = 'Show the Diagnosis';
+      answer-congestion-spleen.style.display = 'none';
+      showAnswer-congestion-spleenBtn.textContent = 'Show the Diagnosis';
     }
   });
 </script>
@@ -247,15 +247,15 @@ asis, echo = (language == "EN")
 
 ```{comment}
 r, eval=TRUE, echo=FALSE, include=FALSE, error=TRUE
-if (!file.exists("./screenshots/template_screenshot.png")) {
+if (!file.exists("./screenshots/congestion-spleen_screenshot.png")) {
 
 url <- "https://img.youtube.com/vi/U9glkfQLTm4/maxresdefault.jpg"
-download.file(url, destfile = "./screenshots/template_screenshot.png", mode = "wb")
+download.file(url, destfile = "./screenshots/congestion-spleen_screenshot.png", mode = "wb")
 }
 
-**TemplateTR**
+**dalak konjesyon**
 
-[![Video İçin Tıklayın](./screenshots/template_screenshot.png){width="25%"}](https://www.youtube.com/watch?v=) [Video İçin Tıklayın](https://www.youtube.com/watch?v=)
+[![Video İçin Tıklayın](./screenshots/congestion-spleen_screenshot.png){width="25%"}](https://www.youtube.com/watch?v=) [Video İçin Tıklayın](https://www.youtube.com/watch?v=)
 
 ```
 
@@ -279,5 +279,5 @@ asis, echo = ((language=="EN") & (output_type!="html"))
 
 ```{comment}
 =html
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/congestion-spleen/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 ```
