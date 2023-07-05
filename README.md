@@ -5,59 +5,6 @@
 **congestion-spleen for pathology atlas repositories**
 
 
-```
-see [make-html-WSI](https://github.com/pathologyatlas/make-html-WSI) for more information and [TODO](https://github.com/pathologyatlas/TODO) to add cases
-```
-
-```
-update html file heading:
-
-<title>congestion in spleen dalak konjesyon</title>
-
-<meta name="keywords" content="congestion in spleen, dalak konjesyon, patoloji, atlas, pathology, whole slide image">
-
-<meta name="description" content="congestion in spleen dalak konjesyon">
-
-```
-
-
-
-```zsh
-
-vips dzsave HE.svs HE
-
-```
-
-
-
-```
-update html file to match .dzi file
-
-```
-
-
-```
-add to begining of qmd page
-
----
-description: |
-    congestion in spleen
-    dalak konjesyon
-date: last-modified
-categories: [congestion-spleen]
-page-layout: full
-bibliography: references.bib
----
-
-```
-
-
-
-> consider using git_push.sh script to upload files to github, since the number of generated files is huge
-
-> after upload complete, do not forget to activate github pages for the new repository
-
-
 
 ```{r language congestion-spleen, echo=FALSE, include=TRUE}
 source("./R/language.R")
